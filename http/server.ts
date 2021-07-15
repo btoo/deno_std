@@ -394,6 +394,6 @@ export interface Response {
   status?: number;
   statusText?: string;
   headers?: Headers;
-  body?: Uint8Array | Deno.Reader | string;
+  body?: Uint8Array | Deno.Reader | string | null;
   trailers?: () => Promise<Headers> | Headers;
 }
